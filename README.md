@@ -25,7 +25,7 @@ submit Pull Requests when ever possible.
 
 ## Thanks
 
-Thanks to [QUICKER GmbH](http://www.quicker.com/) for sponsoring the initial
+Thanks to [EOL Portals GmbH](http://www.eol.de/) for sponsoring the initial
 release of this package.
 
 ## License
