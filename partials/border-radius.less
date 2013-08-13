@@ -1,0 +1,23 @@
+/**
+ * @description
+ * Generates cross-browser-compatible `border-radius` for a given element
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/border-radius
+ * @link spec http://www.w3.org/TR/css3-background/#corners
+ *
+ * @param values
+ * @returns
+ *   -webkit-border-radius: <values>;
+ *           border-radius: <values>;
+ *
+ * @example
+ *   .selector {
+ *     ._border-radius(20px 10px);
+ *   }
+ */
+._border-radius (@values) {
+	-webkit-border-radius: @values; // iOS Safari 3.2, Android 2.1
+	        border-radius: @values;
+}

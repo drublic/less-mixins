@@ -1,0 +1,27 @@
+/**
+ * @description
+ * Disables selection of content of a given element
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/user-select-none
+ *
+ * @param value none|auto optional
+ * @default none
+ * @returns
+ *   -webkit-user-select: <value>;
+ *      -moz-user-select: <value>;
+ *       -ms-user-select: <value>;
+ *           user-select: <value>;
+ *
+ * @example
+ *   .selector {
+ *     .x-user-select;
+ *   }
+ */
+._user-select (@vaule: none) {
+	-webkit-user-select: @vaule;
+	   -moz-user-select: @vaule;
+	    -ms-user-select: @vaule;
+	        user-select: @vaule;
+}

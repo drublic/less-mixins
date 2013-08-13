@@ -1,0 +1,25 @@
+{
+  "name": "less-mixins",
+  "title": "LESS Mixins",
+  "description": "Some LESS Mixins to use in your project",
+  "version": "0.1.0",
+  "homepage": "https://github.com/drublic/less-mixins",
+  "author": {
+    "name": "Hans Christian Reinl",
+    "url": "http://drublic.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/drublic/less-mixins.git"
+  },
+  "bugs": {
+    "url": "https://github.com/drublic/less-mixins/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "0.4.x",
+    "grunt-contrib-concat": "0.2.0",
+    "grunt-contrib-less": "0.7.0"
+  },
+  "keywords": []
+}

@@ -1,0 +1,14 @@
+{
+	"name": "less-mixins",
+	"version": "0.1.0",
+	"main": "mixins.less",
+	"author": "Hans Christian Reinl",
+	"ignore": [
+		"node_modules",
+		"partials",
+		"tests",
+		".gitignore",
+		"Gruntfile.js",
+		"package.json"
+	]
+}

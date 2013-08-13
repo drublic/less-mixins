@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Visual tests for LESS Mixins</title>
+
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<h1>LESS Mixins</h1>
+
+		<div class="test-case animation">
+			<pre><code>x-animation(jump 1s infinite ease-out);
+x-keyframes(jump) {
+	from { top: 0; }
+	to { top: -10px; }
+}
+</code></pre>
+
+		</div>
+
+		<div class="test-case border-radius">
+			<pre><code>_border-radius(20px 10px);</code></pre>
+		</div>
+
+		<div class="test-case box-shadow">
+			<pre><code>_box-shadow(5px 5px 10px 5px #aaa);</code></pre>
+		</div>
+
+		<div class="test-case box-sizing">
+			<pre><code>_box-sizing(); <strong>while</strong> width: 100%; padding: 0 30px;</code></pre>
+		</div>
+
+		<div class="test-case linear-gradient">
+			<pre><code>_linear-gradient("to bottom", #ddd, #ddd, #555);</code></pre>
+		</div>
+
+		<div class="test-case linear-gradient-2">
+			<pre><code>_linear-gradient("to right", #ddd, #ddd, #555);</code></pre>
+		</div>
+
+		<div class="test-case rem">
+			<pre><code>_rem(font-size, 1.3);</code></pre>
+		</div>
+
+		<div class="test-case transform">
+			<pre><code>_transform(rotate(1deg));</code></pre>
+		</div>
+
+		<div class="test-case transition">
+			<pre><code>_transition(background 0.3s ease-in); <strong>while</strong> :hover { background: #bbb }</code></pre>
+		</div>
+
+		<div class="test-case user-select">
+			<pre><code>_user-select;</code></pre>
+		</div>
+	</body>
+</html>

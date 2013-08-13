@@ -1,0 +1,26 @@
+/**
+ * @description
+ * Generates cross-browser-compatible `transition` output for a given element.
+ *
+ * @author drublic
+ *
+ * @link caniuse http://caniuse.com/css-transitions
+ * @link spec
+ *
+ * @param values
+ * @returns
+ *   -webkit-transition: <values>;
+ *      -moz-transition: <values>;
+ *        -o-transition: <values>;
+ *           transition: <values>;
+ *
+ * @example
+ *   .selector {
+ *     ._transition(background 0.3s ease-in);
+ *   }
+ */
+._transition (@values) {
+	-webkit-transition: @values;
+	     -o-transition: @values;
+	        transition: @values;
+}
