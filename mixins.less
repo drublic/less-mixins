@@ -104,7 +104,7 @@
 ._linear-gradient(@direction: top, @fallback: #ccc, @from: #ccc, @to: #aaa) {
 
 	// New Syntax has to be evaluated to old one
-	.direction () when (@direction = to bottom) {
+	.direction () when (@direction = top) {
 		background-image: linear-gradient(to bottom, @from, @to);
 	}
 	.direction () when (@direction = left) {
