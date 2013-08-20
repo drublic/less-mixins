@@ -1,5 +1,24 @@
 /**
  * @description
+ * Generates keyframe animations
+ *
+ * @author drublic
+ *
+ * @link caniuse
+ * @link spec
+ *
+ * @param values
+ * @returns
+ *   -webkit-border-radius: <values>;
+ *           border-radius: <values>;
+ *
+ * @example
+ *   .selector {
+ *     ._animation(jump 1s ease-out);
+ *   }
+ */
+/**
+ * @description
  * Generates cross-browser-compatible `border-radius` for a given element
  *
  * @author drublic

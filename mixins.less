@@ -1,5 +1,29 @@
 /**
  * @description
+ * Generates keyframe animations
+ *
+ * @author drublic
+ *
+ * @link caniuse
+ * @link spec
+ *
+ * @param values
+ * @returns
+ *   -webkit-border-radius: <values>;
+ *           border-radius: <values>;
+ *
+ * @example
+ *   .selector {
+ *     ._animation(jump 1s ease-out);
+ *   }
+ */
+._animation (@values) {
+  -webkit-animation: @values;
+          animation: @values;
+}
+
+/**
+ * @description
  * Generates cross-browser-compatible `border-radius` for a given element
  *
  * @author drublic
@@ -261,9 +285,9 @@
  *     .x-user-select;
  *   }
  */
-._user-select (@vaule: none) {
-	-webkit-user-select: @vaule;
-	   -moz-user-select: @vaule;
-	    -ms-user-select: @vaule;
-	        user-select: @vaule;
+._user-select (@value: none) {
+	-webkit-user-select: @value;
+	   -moz-user-select: @value;
+	    -ms-user-select: @value;
+	        user-select: @value;
 }
