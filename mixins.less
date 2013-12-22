@@ -48,6 +48,7 @@
 	   -moz-appearance: @value;
 	        appearance: @value;
 }
+
 /**
  * @description
  * Generates cross-browser-compatible `border-radius` for a given element
@@ -173,6 +174,42 @@
 	.direction;
 }
 
+/**
+ * @description
+ * Generates `placeholder` content for a given element
+ *
+ * @author romamatusevich
+ *
+ * @link MDN https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-placeholder
+ * @link css-tricks http://css-tricks.com/snippets/css/style-placeholder-text/
+ *
+ * @returns
+ *    &::-webkit-input-placeholder {
+ *        color: <color>;
+ *    }
+ *    &::-moz-placeholder {
+ *        color: <color>;
+ *    }
+ *    &:-ms-input-placeholder {
+ *        color: <color>;
+ *    }
+ *
+ * @example
+ *   .selector {
+ *     ._placeholder(#ccc);
+ *   }
+ */
+._placeholder(@color) {
+    &::-webkit-input-placeholder {
+        color: @color; // Chrome, Safari, Opera
+    }
+    &::-moz-placeholder {
+        color: @color; // Firefox 19+
+    }
+    &:-ms-input-placeholder {
+        color: @color; // IE 10+
+    }
+}
 /**
  * @description
  * This mixin will enable using the CSS3 value `rem`, which lets you define
