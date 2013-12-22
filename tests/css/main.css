@@ -127,6 +127,31 @@
  */
 /**
  * @description
+ * Generates `placeholder` content for a given element
+ *
+ * @author romamatusevich
+ *
+ * @link MDN https://developer.mozilla.org/en-US/docs/Web/CSS/:-moz-placeholder
+ * @link css-tricks http://css-tricks.com/snippets/css/style-placeholder-text/
+ *
+ * @returns
+ *    &::-webkit-input-placeholder {
+ *        color: <color>;
+ *    }
+ *    &::-moz-placeholder {
+ *        color: <color>;
+ *    }
+ *    &:-ms-input-placeholder {
+ *        color: <color>;
+ *    }
+ *
+ * @example
+ *   .selector {
+ *     ._placeholder(#ccc);
+ *   }
+ */
+/**
+ * @description
  * This mixin will enable using the CSS3 value `rem`, which lets you define
  * property-sizes based on the root-element's font-size.
  *
@@ -291,6 +316,15 @@ html {
   background-image: -ms-linear-gradient(left, #dddddd, #555555);
   background-image: -o-linear-gradient(left, #dddddd, #555555);
   background-image: linear-gradient(to right, #dddddd, #555555);
+}
+.placeholder::-webkit-input-placeholder {
+  color: #cccccc;
+}
+.placeholder::-moz-placeholder {
+  color: #cccccc;
+}
+.placeholder:-ms-input-placeholder {
+  color: #cccccc;
 }
 .rem {
   -: ;font-size: 20.8px;

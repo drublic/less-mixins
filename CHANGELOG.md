@@ -2,6 +2,7 @@
 
 ### HEAD
 
+* Add mixin for placeholder
 * Add mixin for appearance
 * Add mixins for animations
 * Fix minor typo in mixins user-select
