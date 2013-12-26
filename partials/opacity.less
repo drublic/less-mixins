@@ -1,0 +1,23 @@
+/**
+* @description
+* Implement `opacity` for a given element
+*
+* @author romamatusevich
+*
+* @link spec http://www.w3.org/TR/css3-color/#transparency
+* @link MDN https://developer.mozilla.org/en-US/docs/Web/CSS/opacity
+*
+* @param value
+* @returns
+* opacity: value;
+* filter: alpha(opacity = value * 100);
+*
+* @example
+*   .selector {
+*       ._opacity(0.5);
+*   }
+*/
+._opacity (@value) {
+    opacity: @value;
+    filter: ~`"alpha(opacity = " + "@{value}" * 100 + ")"`;
+}

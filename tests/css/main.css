@@ -126,6 +126,25 @@
  *   }
  */
 /**
+* @description
+* Implement `opacity` for a given element
+*
+* @author romamatusevich
+*
+* @link spec http://www.w3.org/TR/css3-color/#transparency
+* @link MDN https://developer.mozilla.org/en-US/docs/Web/CSS/opacity
+*
+* @param value
+* @returns
+* opacity: value;
+* filter: alpha(opacity = value * 100);
+*
+* @example
+*   .selector {
+*       ._opacity(0.5);
+*   }
+*/
+/**
  * @description
  * Generates `placeholder` content for a given element
  *
@@ -316,6 +335,10 @@ html {
   background-image: -ms-linear-gradient(left, #dddddd, #555555);
   background-image: -o-linear-gradient(left, #dddddd, #555555);
   background-image: linear-gradient(to right, #dddddd, #555555);
+}
+.opacity {
+  opacity: 0.5;
+  filter: alpha(opacity = 50);
 }
 .placeholder::-webkit-input-placeholder {
   color: #cccccc;

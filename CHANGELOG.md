@@ -2,6 +2,8 @@
 
 ### HEAD
 
+* Add mixin for opacity
+
 ### 0.2.0 - 26.12.2013
 * Add mixin for placeholder
 * Add mixin for appearance
