@@ -1,3 +1,9 @@
+# Deprecated
+
+This plugin is no longer maintained an thus deprecated.
+
+---
+
 # Some LESS mixins for your needs
 
 Take what you need!
